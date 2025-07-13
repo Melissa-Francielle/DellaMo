@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DellaMô</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Carrega as versões UMD (não-module) das bibliotecas -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu">
+            <button id="start-btn" class="menu-btn">START</button>
+            <button id="exit-btn" class="menu-btn">EXIT</button>
+        </div>
+    </div>
+
+    <div class="game" style="display:none;">
+        <canvas id="background"></canvas>
+    </div>
+
+    <!-- Barra de loading -->
+    <div id="loading-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: #333;">
+        <div id="loading-bar" style="height: 100%; width: 0%; background: #e75123;"></div>
+    </div>
+
+    <script src="main.js"></script> 
+</body>
+</html>
