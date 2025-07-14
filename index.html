@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
 </head>
 <body>
     <div class="menu-container">
@@ -22,6 +23,12 @@
 
     <div class="game" style="display:none;">
         <canvas id="background"></canvas>
+    </div>
+
+    <div id="dialogue-container" class="dialogue-container">
+        <div id="dialogue-box" class="dialogue-box">
+            <div id="dialogue-text" class="dialogue-text"></div>
+        </div>
     </div>
 
     <!-- Barra de loading -->
