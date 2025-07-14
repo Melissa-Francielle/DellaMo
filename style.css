@@ -16,6 +16,48 @@ html, body {
     z-index: -1;
 }
 
+.dialogue-container {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+
+.dialogue-box {
+    /* Tamanho da caixa */
+    width: 100%; /* Largura relativa à tela */
+    max-width: 1400px; /* Largura máxima */
+    min-height: 200px; /* Altura mínima - AUMENTE ESTE VALOR para deixar mais alto */
+    
+    /* Espaçamento interno */
+    padding: 30px; /* AUMENTE este valor para dar mais espaço ao texto */
+    
+    /* Fonte */
+    font-size: 24px; /* AUMENTE para texto maior */
+    
+    /* Outras propriedades existentes... */
+    background-color: rgba(203, 165, 102, 0.841);
+    border-radius: 15px;
+    border: 3px solid #444;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+.dialogue-text {
+    margin: 0;
+    font-size: 15mm;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
 /* Background full-screen */
 .menu-container {
   background-image: url('imagens/interface.jpeg'); 
@@ -66,4 +108,18 @@ html, body {
   transform: scale(0.98);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   color: rgb(255, 204, 172);
+}
+
+.next-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.next-btn:hover {
+    background-color: #45a049;
 }
